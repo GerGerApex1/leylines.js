@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "rootDir": "src",
+        "outDir": "dist",
+        "target": "esnext",
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "module": "ES6",
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "declaration": true,
+        "allowJs": true,
+        "emitDeclarationOnly": true,
+        "moduleResolution": "node",
+        "declarationMap": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "src/**/*",
+        "typings/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
