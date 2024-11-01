@@ -1,4 +1,6 @@
 class Cache {
+    cachedData: {}
+    debug: boolean
     /**
      * 
      * @param {booleen} enableDebug 
@@ -7,7 +9,7 @@ class Cache {
         this.cachedData = {}
         this.debug = enableDebug
     }
-    get(key) {
+    get(key:any) {
         const requestedCache = this.cachedData[key]
         if(requestedCache) {
             return requestedCache
@@ -15,7 +17,7 @@ class Cache {
             requestedCache
         }
     }
-    set(key, value) {
+    set(key: any, value:any ) {
         if(key) {
             this.cachedData[key] = value
             return;

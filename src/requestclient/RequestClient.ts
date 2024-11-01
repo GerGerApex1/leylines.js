@@ -22,6 +22,8 @@ function parseCookies(cookies) {
   return finalCookieString
 }
 class RequestClient {
+  cookies: string;
+  axiosClient: any;
   constructor(cookies) {
     this.cookies = parseCookies(cookies)
     this.axiosClient = axios.create({
@@ -30,10 +32,6 @@ class RequestClient {
         "Cookie": this.cookies,
       },
       withCredentials: true,
-      proxy: {
-        host: "localhost",
-        port: '8000'
-      }
     })
   }
   /**

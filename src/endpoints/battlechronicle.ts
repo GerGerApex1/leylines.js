@@ -5,7 +5,8 @@ const genshin_battle_chronicle = {
     TOOL_OVERSEA: GENSHIN_BASE_URL + "tool_oversea",
     SPIRAL_ABYSS: GENSHIN_BASE_URL + 'spiralAbyss',
     ACTIVITIES: GENSHIN_BASE_URL + "activities",
-    CHARACTERS: GENSHIN_BASE_URL + "character"
+    CHARACTERS_LISTS: GENSHIN_BASE_URL + "character/list",
+    CHARACTER_DETAILED: GENSHIN_BASE_URL + "character/detail"
 }
 const honkai_battle_chronicle = {
     INDEX: HONKAI_BASE_URL + 'index',

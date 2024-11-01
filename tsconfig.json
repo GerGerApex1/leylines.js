@@ -3,12 +3,12 @@
         "baseUrl": ".",
         "rootDir": "src",
         "outDir": "dist",
-        "target": "esnext",
+        "target": "ES6",
         "lib": [
             "esnext",
             "dom"
         ],
-        "module": "ES6",
+        "module": "CommonJS",
         "experimentalDecorators": true,
         "sourceMap": true,
         "declaration": true,
@@ -20,7 +20,7 @@
     },
     "include": [
         "src/**/*",
-        "typings/**/*"
+        "typings/**/*",
     ],
     "exclude": [
         "node_modules"
